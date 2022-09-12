@@ -74,7 +74,7 @@ export default {
   },
   async created(){
     try {
-      const response = await axios.get()
+      const response = await axios.get('https://reqres.in/api/users?page=2')
     } catch (error) {
       this.errors.push(error)
       

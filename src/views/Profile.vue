@@ -83,7 +83,7 @@ export default {
 
   async created() {
     try {
-      const response = await axios.get()
+      const response = await axios.get('https://reqres.in/api/users/2')
       this.author = response.data.data
       this.email = this.author.email
       this.firstName = this.author.firstName
